@@ -6,6 +6,6 @@ The **Human-Centred Artificial Intelligence Symposium Series** (HCAI@OVGU) aims 
 
 HCAI@OVGU is intended to take place once a semester for one or two days at the [Faculty of Computer Science](https://www.inf.ovgu.de/en/) of the [Otto von Guericke University Magdeburg (OVGU)](https://www.ovgu.de/en/), and is organised by the [Human-Centred Artificial Intelligence Research Group](https://hcai.ovgu.de/).
 
-The first edition of the Symposium, HCAI@OVGU 2023, is scheduled for November 27-28, 2024.
+The second edition of the Symposium, HCAI@OVGU 2024, is scheduled for November 27-28, 2024.
 
 Further and detailed information on the [website](https://hcai-ovgu.github.io/symposium2024/).
