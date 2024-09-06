@@ -314,9 +314,18 @@ select {
     margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
 
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
 .primary-header {
     justify-content: space-between;
     align-items: center;
+    position: fixed;top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
 }
 
 .primary-navigation {
@@ -326,7 +335,13 @@ select {
     padding: 0;
     margin: 0;
     background: hsl( var(--clr-clr3) / 0.05);
-    backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(5rem);
+    -webkit-backdrop-filter: blur(5rem); /* For Safari */
+    transform: translateZ(0);
+    transition: background-color 0.3s ease; 
+}
+.scrolled {
+    background-color: lightgray; /* Define the color when scrolled */
 }
 
 .primary-navigation a {
@@ -473,6 +488,8 @@ select {
 /* ----------------------------- */
 body {
     background-size: cover;
+    padding-top: 100px;
+    
     
 }
  
@@ -556,18 +573,23 @@ body {
 
 .translucent {
     border-radius: 80px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
- background: hsl( var(--clr-clr3) / 0.01);
-    backdrop-filter: blur(5rem);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: hsl(var(--clr-clr3) / 0.01);
+    
+    /* Add Safari support */
+    backdrop-filter: blur(5rem); /* For most modern browsers */
+    -webkit-backdrop-filter: blur(5rem); /* For Safari */
     padding: 30px;
-
+    
 }
 
 .a-background{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
  background: hsl( var(--clr-clr2) / 0.4);
     backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem); /* For Safari */
     border-radius: 5px;
+    transform: translateZ(0);
 
 }
 
@@ -847,6 +869,16 @@ canvas {
     padding-left: 10%;
     padding-bottom: 10%;
     padding-right: 2%;
+     -webkit-appearance: none; /* Prevent default button styling on Safari */
+  appearance: none;
+    
+
+}
+@supports (-webkit-appearance: none) {
+  .register{
+    text-shadow: none; /* Ensure there's no text-shadow */
+    border: none; /* Explicitly remove any border Safari might add */
+  }
 }
 
 
@@ -1185,4 +1217,3 @@ canvas {
 .dot-side:focus { 
     background-color: hsl( var(--clr-clr3) / .5);
 }
-
