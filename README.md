@@ -1,4 +1,4 @@
-# First Human-Centred Artificial Intelligence Symposium (HCAI@OVGU 2024) 
+# Second Human-Centred Artificial Intelligence Symposium (HCAI@OVGU 2024) 
 
 The emerging concept of **Human-Centred Artificial Intelligence** (HCAI) involves *amplifying*, *augmentation*, *empowering* and *enhancing* individuals. HCAI aims to ensure that AI systems operate transparently, deliver fair and equitable outcomes, and respect privacy while preserving human control. This approach involves multiple stakeholders, such as researchers, developers, business leaders, policymakers, and users, who are affected in various ways by implementing and evaluating AI systems.
 
@@ -6,6 +6,6 @@ The **Human-Centred Artificial Intelligence Symposium Series** (HCAI@OVGU) aims 
 
 HCAI@OVGU is intended to take place once a semester for one or two days at the [Faculty of Computer Science](https://www.inf.ovgu.de/en/) of the [Otto von Guericke University Magdeburg (OVGU)](https://www.ovgu.de/en/), and is organised by the [Human-Centred Artificial Intelligence Research Group](https://hcai.ovgu.de/).
 
-The second edition of the Symposium, HCAI@OVGU 2024, is scheduled for November 27-28, 2024.
+The second edition of the Symposium, HCAI@OVGU 2024, is scheduled for November 4th-5th, 2024.
 
 Further and detailed information on the [website](https://hcai-ovgu.github.io/symposium2024/).
