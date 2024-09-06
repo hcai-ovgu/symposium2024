@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title>speakers</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+
+</head>
+
+<body class="speaker">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav> 
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">About</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="speakers.html">Speaker</a>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="organisers.html">Organiser</a>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html" >Venue</a></li>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">Contacts</a></li>
+            
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--speaker flow">
+    <h1 class="numbered-title translucent"> Meet our Speakers</h1>
+    
+    <!-- <div class="dot-indicators flex" role="tablist" aria-label="speaker member list">
+      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0"><span class="sr-only">Natalia Andrienko</span></button>
+      <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission-image" tabindex="-1"><span class="sr-only">Florian Michahelles</span></button>
+      
+    </div> -->
+    
+    <!-- Natalia Andrienko -->
+
+    <article class="speaker-details flow translucent" id="commander-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <p class="fs-700 uppercase ff-serif"> Will be annouced soon.</p>
+        <!-- <h2 class="fs-600 ff-serif uppercase">Fraunhofer Institute IAIS, Germany</h2>
+      </header>
+      <p>Natalia Andrienko is the AreaChair for Human-Centered AI and Co-PI of the Lamarr Institute forMachine Learning and Artificial Intelligence.</p> -->
+    </article> 
+    
+    <!-- Florian Michahelles
+
+    <article hidden class="speaker-details flow translucent" id="mission-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        
+        <p class="fs-700 uppercase ff-serif">Florian Michahelles</p>
+        <h2 class="fs-600 ff-serif uppercase">TU Wien, Austria</h2>
+      </header>
+      <p>Florian Michahelles is head of research group at Siemens Corporation in Berkeley/CA, associate director Auto-ID Labs at ETH Zurich, Visiting Researcher at Keio University, and MIT Sloan Visiting Fellow.</p>
+    </article>  -->
+    
+   
+    
+    
+    <!-- <picture id="commander-image">
+      <source srcset="assets/speaker/Andrienko.webp" type="image/webp">
+      <img src="assets/speaker/Andrienko.png" alt="Natalia Andrienko">
+    </picture>
+    <picture hidden id="mission-image">
+      <source srcset="assets/speaker/Florian.webp" type="image/webp">
+      <img src="assets/speaker/Florian.png" alt="Florian Michahelles">
+    </picture> -->
+    <!-- <picture hidden id="pilot-image">
+      <source srcset="assets/speaker/image-victor-glover.webp" type="image/webp">
+      <img src="assets/speaker/image-victor-glover.png" alt="Douglas Hurley">
+    </picture>
+    <picture hidden id="speaker-image">
+      <source srcset="assets/speaker/image-anousheh-ansari.webp" type="image/webp">
+      <img src="assets/speaker/image-anousheh-ansari.png" alt="Douglas Hurley">
+    </picture> -->
+  </main>
+</body>
+</html>

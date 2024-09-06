@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title>Organisers</title>
+  <script src="navigation.js" defer></script>
+  <script src="tabs.js" defer></script>
+
+</head>
+
+<body class="organiser">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav> 
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">About</a>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="speakers.html">Speaker</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="organisers.html">Organiser</a>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html" >Venue</a></li>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">Contacts</a></li>
+           
+        </ul>
+    </nav>
+  </header>
+  
+  <main id="main" class="grid-container grid-container--organiser flow">
+    
+    <button class="dot-side left"><img style="height: 50px;" src="./assets/shared/352467_arrow_left_icon.png" alt=""></button>
+    <button class="dot-side right"><img style="height: 50px;" src="./assets/shared/352468_arrow_right_icon.png" alt=""></button>
+    <div class="dot-indicators flex" role="tablist" aria-label="organiser member list">
+      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0"></button>
+      <button aria-selected="false" aria-controls="marco" role="tab" data-image="marco-image" tabindex="-1"></button>
+      <button aria-selected="false" aria-controls="local-organisers" role="tab" data-image="" tabindex="-2"></button>
+      <button aria-selected="false" aria-controls="Kartik" role="tab" data-image="kartik-image" tabindex="-3"></button>
+      <button aria-selected="false" aria-controls="Publicity-staff" role="tab" data-image="" tabindex="-4"></button>
+      <button aria-selected="false" aria-controls="Support-staff" role="tab" data-image="" tabindex="-5"></button>
+    </div>
+    
+    <!-- Ernesto William De Luca -->
+
+    <article class="organiser-details flow translucent" id="commander-tab" role="tabpanel" tabindex="0">
+      <header class="flow flow--space-small">
+        <p class="fs-700 uppercase ff-serif"> Ernesto William De Luca </p>
+        <h2 class="fs-600 ff-serif uppercase">Full Professor, Otto von Guericke University Magdeburg, Germany </h2>
+      </header>
+      <p>Leibniz Institute for Educational Media |
+        Georg Eckert Institute, Brunswick, Germany</p>
+
+        <h1 class="numbered-title translucent"> General Organiser</h1>
+    </article> 
+     <!-- Marco Levantesi -->
+
+     <article class="organiser-details flow translucent" id="marco" role="tabpanel" tabindex="-1">
+      <header class="flow flow--space-small">
+        <p class="fs-700 uppercase ff-serif"> Marco Levantesi </p>
+        <h2 class="fs-600 ff-serif uppercase">Research Assistant
+          Otto von Guericke University Magdeburg, Germany </h2>
+      </header>
+
+    
+    </article> 
+    
+    <!-- Local Organizers-->
+    <article hidden class="organiser-details flow translucent" id="local-organisers" role="tabpanel" tabindex="-2">
+      <header class="flow flow--space-small">
+        
+        
+        <h2 class="fs-600 ff-serif uppercase ">Anjali Singh</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Rohit Rakesh</h2>
+        <h1 class="numbered-title translucent"> Local Organisers</h1>
+      </header>
+    </article> 
+    <!-- Website Development Staff -->
+
+    <article hidden class="organiser-details flow translucent" id="Kartik" role="tabpanel" tabindex="-3">
+      <header class="flow flow--space-small">
+        
+        <p class="fs-700 uppercase ff-serif">Kartik Suru</p>
+        <h2 class="fs-600 ff-serif uppercase ">Student of Digital Engineering, Otto von Guericke University Magdeburg, Germany</h2>
+        <h1 class="numbered-title translucent"> Website Development Staff</h1>
+      </header>
+    </article> 
+    
+    <!-- Publicity Staff -->
+    
+    <article hidden class="organiser-details flow translucent" id="Publicity-staff" role="tabpanel" tabindex="-4">
+      <header class="flow flow--space-small">
+        
+        
+        <h2 class="fs-600 ff-serif uppercase ">Samapika</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Sufiya</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Sandipan</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Anjali</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Rohit</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Prajwal</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Vamsi</h2>
+        <h1 class="numbered-title translucent"> Publicity Staff</h1>
+      </header>
+    </article> 
+
+    <!-- Support Staff -->
+    <article hidden class="organiser-details flow translucent" id="Support-staff" role="tabpanel" tabindex="-5">
+      <header class="flow flow--space-small">
+        
+        <h2 class="fs-600 ff-serif uppercase ">Shifin</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Samapika</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Sufiya</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Sandipan</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Prajwal</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Vamsi</h2>
+        <h2 class="fs-600 ff-serif uppercase ">Jobin</h2>
+        <h1 class="numbered-title translucent"> Support Staff</h1>
+      </header>
+    </article> 
+   
+    
+    
+    <picture id="commander-image">
+      <source srcset="assets/organiser/Deluca.webp" type="image/webp">
+      <img src="assets/organiser/Deluca.png" alt="Ernesto William De Luca">
+    </picture>
+    <picture class="Kartik Suru" hidden id="kartik-image">
+      <source srcset="assets/organiser/Kartik Suru.webp" type="image/webp">
+      <img  src="assets/organiser/Kartik Suru.png" alt="Kartik Suru">
+    </picture>
+    <picture class="marco" hidden id="marco-image">
+      <source srcset="assets/organiser/Marco.webp" type="image/webp">
+      <img  src="assets/organiser/Marco.png" alt="Marco Levantesi">
+    </picture>
+    <!-- <picture hidden id="pilot-image">
+      <source srcset="assets/organiser/image-victor-glover.webp" type="image/webp">
+      <img src="assets/organiser/image-victor-glover.png" alt="Douglas Hurley">
+    </picture>
+    <picture hidden id="organiser-image">
+      <source srcset="assets/organiser/image-anousheh-ansari.webp" type="image/webp">
+      <img src="assets/organiser/image-anousheh-ansari.png" alt="Douglas Hurley">
+    </picture> -->
+  </main>
+</body>
+</html>
