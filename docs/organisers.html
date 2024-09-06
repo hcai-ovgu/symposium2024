@@ -1,156 +1,395 @@
 <!DOCTYPE html>
+
+</html>
+
 <html lang="en">
-<head>
+  <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
-      rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&amp;family=Bellefair&amp;family=Barlow:wght@400;700&amp;display=swap" rel="stylesheet">
       
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
   <!-- Our custom CSS -->
   <link rel="stylesheet" href="index.css">
-  <title>Organisers</title>
-  <script src="navigation.js" defer></script>
-  <script src="tabs.js" defer></script>
+  <title>Symposium2024</title>
+  <script src="navigation.js" defer=""></script>
 
 </head>
-
-<body class="organiser">
-  <a class="skip-to-content" href="#main">Skip to content</a>
+<body class="home">
+  <div style="z-index: -1;" id="particles-js"><canvas class="particles-js-canvas-el" width="2536" height="750" style="width: 100%; height: 100%;"></canvas></div> 
+ 
   <header class="primary-header flex">
     <div>
       <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
     </div>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
-    <nav> 
+    <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">About</a>
-            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="speakers.html">Speaker</a>
-            <li class="active"><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="organisers.html">Organiser</a>
-            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html" >Venue</a></li>
-            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">Contacts</a></li>
+
+            <li class="active"><a class=" link1 ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">About</a></li>
+            <li><a class="link2 ff-sans-cond uppercase text-clr3 letter-spacing-2" href="speakers.html">Speakers</a></li>
+            <li><a class="link3 ff-sans-cond uppercase text-clr3 letter-spacing-2" href="organisers.html">Organisers</a></li>
+            <li><a class="link4 ff-sans-cond uppercase text-clr3 letter-spacing-2" href="#venue" >Venue</a></li>
+            <li><a class="link5 ff-sans-cond uppercase text-clr3 letter-spacing-2" href="#contacts">Contacts</a></li>
            
-        </ul>
+      </ul>
     </nav>
   </header>
   
-  <main id="main" class="grid-container grid-container--organiser flow">
-    
-    <button class="dot-side left"><img style="height: 50px;" src="./assets/shared/352467_arrow_left_icon.png" alt=""></button>
-    <button class="dot-side right"><img style="height: 50px;" src="./assets/shared/352468_arrow_right_icon.png" alt=""></button>
-    <div class="dot-indicators flex" role="tablist" aria-label="organiser member list">
-      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0"></button>
-      <button aria-selected="false" aria-controls="marco" role="tab" data-image="marco-image" tabindex="-1"></button>
-      <button aria-selected="false" aria-controls="local-organisers" role="tab" data-image="" tabindex="-2"></button>
-      <button aria-selected="false" aria-controls="Kartik" role="tab" data-image="kartik-image" tabindex="-3"></button>
-      <button aria-selected="false" aria-controls="Publicity-staff" role="tab" data-image="" tabindex="-4"></button>
-      <button aria-selected="false" aria-controls="Support-staff" role="tab" data-image="" tabindex="-5"></button>
+  <main id="main" class="main-container">
+    <div class="uni-logo">
+    <a style="height: 95%;background-image: url(./img/favicon/hcai_logo_square_transp_hd.png); background-repeat: no-repeat; background-position: center; background-size: 80%;" href="https://hcai.ovgu.de/" target="_blank" class="large-button uppercase ff-serif text-clr1 bg-white"></a>
+    </div>
+    <div class="text">
+      <h1 class="text-clr3 fs-500 ff-sans-cond uppercase letter-spacing-1">HCAI SYMPOSIUM
+      <span class="d-block fs-900 ff-serif text-clr3">2024</span></h1>
+      <span class="d-block fs-700 ff-serif text-clr3">OVGU</span>
+      
+    </div>
+
+    <div class="register">
+      <a href="https://forms.gle/LajHfyGhsyAhsiGm6" target="_blank">
+        <button type="submit">
+          <h1 class="text-clr3 fs-500 ff-sans-cond uppercase letter-spacing-1">Register Now
+        </button>
+      </a>
+     
+
+
     </div>
     
-    <!-- Ernesto William De Luca -->
-
-    <article class="organiser-details flow translucent" id="commander-tab" role="tabpanel" tabindex="0">
-      <header class="flow flow--space-small">
-        <p class="fs-700 uppercase ff-serif"> Ernesto William De Luca </p>
-        <h2 class="fs-600 ff-serif uppercase">Full Professor, Otto von Guericke University Magdeburg, Germany </h2>
-      </header>
-      <p>Leibniz Institute for Educational Media |
-        Georg Eckert Institute, Brunswick, Germany</p>
-
-        <h1 class="numbered-title translucent"> General Chair</h1>
-    </article> 
-     <!-- Marco Levantesi -->
-
-     <article class="organiser-details flow translucent" id="marco" role="tabpanel" tabindex="-1">
-      <header class="flow flow--space-small">
-        <p class="fs-700 uppercase ff-serif"> Marco Levantesi </p>
-        <h2 class="fs-600 ff-serif uppercase">Research Assistant
-          Otto von Guericke University Magdeburg, Germany </h2>
-        <h1 class="numbered-title translucent"> Local Chair</h1>
-      </header>
-
-    
-    </article> 
-    
-    <!-- Local Organizers-->
-    <article hidden class="organiser-details flow translucent" id="local-organisers" role="tabpanel" tabindex="-2">
-      <header class="flow flow--space-small">
-        
-        
-        <h2 class="fs-600 ff-serif uppercase ">Anjali Singh</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Rohit Rakesh</h2>
-        <h1 class="numbered-title translucent"> Local Group</h1>
-      </header>
-    </article> 
-    <!-- Website Development Staff -->
-
-    <article hidden class="organiser-details flow translucent" id="Kartik" role="tabpanel" tabindex="-3">
-      <header class="flow flow--space-small">
-        
-        <p class="fs-700 uppercase ff-serif">Kartik Suru</p>
-        <h2 class="fs-600 ff-serif uppercase ">Student of Digital Engineering, Otto von Guericke University Magdeburg, Germany</h2>
-        <h1 class="numbered-title translucent"> Website Development Staff</h1>
-      </header>
-    </article> 
-    
-    <!-- Publicity Staff -->
-    
-    <article hidden class="organiser-details flow translucent" id="Publicity-staff" role="tabpanel" tabindex="-4">
-      <header class="flow flow--space-small">
-        
-        
-        <h2 class="fs-600 ff-serif uppercase ">Samapika</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Sufiya</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Sandipan</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Anjali</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Rohit</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Prajwal</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Vamsi</h2>
-        <h1 class="numbered-title translucent"> Volunteers </h1>
-      </header>
-    </article> 
-
-    <!-- Support Staff -->
-    <article hidden class="organiser-details flow translucent" id="Support-staff" role="tabpanel" tabindex="-5">
-      <header class="flow flow--space-small">
-        
-        <h2 class="fs-600 ff-serif uppercase ">Shifin</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Samapika</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Sufiya</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Sandipan</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Prajwal</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Vamsi</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Jobin</h2>
-        <h1 class="numbered-title translucent"> Volunteers</h1>
-      </header>
-    </article> 
-   
-    
-    
-    <picture id="commander-image">
-      <source srcset="assets/organiser/Deluca.webp" type="image/webp">
-      <img src="assets/organiser/Deluca.png" alt="Ernesto William De Luca">
-    </picture>
-    <picture class="Kartik Suru" hidden id="kartik-image">
-      <source srcset="assets/organiser/Kartik Suru.webp" type="image/webp">
-      <img  src="assets/organiser/Kartik Suru.png" alt="Kartik Suru">
-    </picture>
-    <picture class="marco" hidden id="marco-image">
-      <source srcset="assets/organiser/Marco.webp" type="image/webp">
-      <img  src="assets/organiser/Marco.png" alt="Marco Levantesi">
-    </picture>
-    <!-- <picture hidden id="pilot-image">
-      <source srcset="assets/organiser/image-victor-glover.webp" type="image/webp">
-      <img src="assets/organiser/image-victor-glover.png" alt="Douglas Hurley">
-    </picture>
-    <picture hidden id="organiser-image">
-      <source srcset="assets/organiser/image-anousheh-ansari.webp" type="image/webp">
-      <img src="assets/organiser/image-anousheh-ansari.png" alt="Douglas Hurley">
-    </picture> -->
   </main>
+  <section class="about-container wow fadeInUp">
+    <div class="main-box">
+      <div class="box-1">
+        <img style="width: 100%; height: 100%; object-fit: cover;" src="./assets/home/Otto von (1).png" alt="">
+        
+
+      </div>
+      <div class="box-2">
+
+        <p class="fs-700 ff-serif text-clr2 text-1">About the Symposium</p>
+
+        <br>
+
+        <p class="fs-500 ff-sans-cond text-clr2 text-2">
+          The Human-Centred Artificial Intelligence Symposium Series (HCAI@OVGU) aims to unite experts from academia and industry to discuss key topics like Responsible AI, Explainable AI, and Fairness. 
+        </p>
+        <br>
+        <p class="fs-500 ff-sans-cond text-clr2 text-2">
+          The event, organized by the Human-Centred Artificial Intelligence Research Group, will be held at the Faculty of Computer Science, Otto von Guericke University Magdeburg, in November, 2024.
+        </p>
+
+      </div>
+      
+    </div>
+  </section>
+  <section id="topics" class="wow fadeInUp services">
+
+    <div class="container-fluid ">
+        <div style="text-align: center; padding: 5%;" class="section-header">
+            <h2 class="fs-700 ff-serif text-clr3">Topics</h2>
+            <br>
+
+            <p class="fs-500 ff-sans-cond text-clr3">The research topics covered by the Symposium include, but are not limited to, the following:</p>
+            <br>
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                      <div class="icon">
+                        <i class="fa-solid fa-users-viewfinder"></i></div>
+                      <h4><a href="javascript:void(0)">Human-Centred Artificial Intelligence</a></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                      <div class="icon">
+                        
+                        <i class="fa-solid fa-user-check"></i></div>
+                      <h4><a href="javascript:void(0)">Responsible Artificial Intelligence</a></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                      <div class="icon">
+                        
+                        <i class="fa-solid fa-box-open"></i></div>
+                      <h4><a href="javascript:void(0)">Explainable Artificial Intelligence</a></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                      <div class="icon">
+                        
+                        <i class="fa-solid fa-scale-unbalanced"></i></div>
+                      <h4><a href="javascript:void(0)">Biases and Fairness</a></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                      <div class="icon">
+                        
+                        <i class="fa-solid fa-scale-balanced"></i></div>
+                      <h4><a href="javascript:void(0)">Legal AI and Regulations</a></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                      <div class="icon">
+                       
+                        <i class="fa-solid fa-tv"></i></div>
+                      <h4><a href="javascript:void(0)">Personalised User Interfaces</a></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                      <div class="icon">
+                       
+                        
+                        <i class="fa-solid fa-file-circle-exclamation"></i></div>
+                      <h4><a href="javascript:void(0)">Information Ethics</a></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="icon-box">
+                      <div class="icon">
+                    
+                        
+                        <i class="fa-solid fa-user-shield"></i></i></div>
+                      <h4><a href="javascript:void(0)">Privacy and Safety</a></h4>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+ <!--==========================
+    Target Audience Section
+    ============================-->
+
+<section class="about-container wow fadeInUp">
+      <div class="main-box">
+        <div class="box-1">
+          <img style="height: 100%; overflow: hidden;" src="./assets/home/Target-audienece.jpeg" alt="Target-audienece">
+          
+  
+        </div>
+        
+        <div class="box-2">
+  
+          <h2 class="ff-serif fs-700 text-clr2 ">Target Audience</h2>
+  
+          <br>
+
+          <ul>
+            <li class="fs-500 ff-sans-cond text-clr2 text-2">
+              The HCAI@OVGU Symposium targets individuals interested in studying novel contributions to HCAI approaches, from researchers to practitioners belonging to academia and industry.
+              The Symposium aims to discuss and exchange ideas within the community about the advances in the development of trustworthy, fair and privacy-preserving systems, as well as explainable user interfaces, with a specific focus on the users' perception in real-world scenarios and not (only) on the algorithmic and model performance.
+
+            </li>
+            <li class="fs-500 ff-sans-cond text-clr2 text-2">
+              HCAI@OVGU aims to foster cross-disciplinary and interdisciplinary discussions between experts from various research fields, such as computer science, psychology, sociology, law, medicine, business, etc., to discuss problems and synergies in this exciting research topic.
+
+            </li>
+          </ul>
+
+        </div>
+        
+        
+      </div>
+    </section>
+
+  <!--==========================
+    Schedule Section
+    ============================-->
+    <section id="program" class="wow fadeInUp schedule">
+
+      <div class="container-fluid">
+          <div class="section-header">
+              <h2 class="ff-serif fs-700 text-clr3 ">Schedule</h2>
+
+              <!-- <p style="font-size: medium;">* The final detailed scheduling will be announced soon.</p> -->
+
+              <div class="conference-days">
+
+                  <div class="day">
+                      <h3 class="fs-500 ff-sans-cond text-clr3 ">Yet to be announced.</h3>
+                    </div>
+
+                  </div>
+                  
+              </div>
+          </div>
+  
+      </section>
+       <!--==========================
+    Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp venue ">
+
+      <div class="container-fluid">
+          <div class="section-header">
+              <h2 class="ff-serif fs-700 text-clr2  " >Venue</h2>
+              <br>
+              <p  class="fs-500 ff-sans-cond text-clr2 ">
+                  Named after Otto von Guericke (1602 - 1686), the renowned son of Magdeburg and well-known for his research on the vacuum, the <a href="https://www.ovgu.de/en/">Otto von Guericke University (OVGU)</a> was founded in 1993 and is thus one of the youngest universities in Germany: a place where tradition meets innovation. With nine faculties, the university has gained in importance as a notable institution of teaching and research. Roughly 14,000 students are enrolled at the moment and approximately 25% of them are international students. Around 770 doctoral students, among which 285 are from abroad, are researching in various fields of engineering, natural science, medicine, economics, etc.
+              </p>
+              <br>
+              <!-- <p>
+                  The event will specifically take place at the <strong>Faculty of Computer Science</strong> of the Otto von Guericke University, Building 29 (G29) of the University Campus, Gustav-Adolf-Straße 15, 39106 Magdeburg, Germany.
+              </p> -->
+              <p  class="fs-500 ff-sans-cond text-clr2">
+                  The event will specifically take place at the <strong>Festung Mark</strong> ("Kulturwerkstatt"), Hohepfortewall 1, 39104 Magdeburg, Germany.
+              </p>
+              <br>
+          </div>
+
+          <!-- <div class="ovgu-map" style="width: inherit; text-align: center; margin-top: -70px;">
+              <iframe width="1000" height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=11.642348170280458%2C52.137679588109286%2C11.649246811866762%2C52.13982624517139&amp;layer=mapnik&amp;marker=52.138749656337815%2C11.645797491073608" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=52.13875&amp;mlon=11.64580#map=18/52.13875/11.64580&amp;layers=N">Visualizza mappa ingrandita</a></small>
+          </div> -->
+
+          <!-- Lukasklause -->
+          <!-- <iframe width="1000" height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=11.649246895805899%2C52.13529081806878%2C11.652264380947653%2C52.13682353177953&amp;layer=mapnik&amp;marker=52.136057181516314%2C11.650755638376722" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=52.13606&amp;mlon=11.65076#map=19/52.13606/11.65076&amp;layers=N">View larger map</a></small> -->
+
+          <div class="ovgu-map" style="width: inherit; text-align: center; margin-top: -70px;">
+              <iframe width="100%" height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=11.643777787685396%2C52.13685806792546%2C11.649549901485445%2C52.13840554371373&amp;layer=mapnik&amp;marker=52.13763181253972%2C11.646663844585419" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=52.13763&amp;mlon=11.64666#map=19/52.13763/11.64666&amp;layers=N">View larger map</a></small>
+          </div>
+
+          <!-- <img style="width: inherit;" src="img/ovgu_uniporta.jpg" /> -->
+
+      </div>
+
+  </section>
+
+  <!--==========================
+  Contacts Section
+  ============================-->
+  <section id="contacts" class="wow fadeInUp section-with-bg contact">
+
+      <div class="container-fluid">
+          <div class="section-header">
+              <h2 class="ff-serif fs-700 text-clr3">Contacts</h2>
+              <p class="fs-500 ff-sans-cond text-clr3">
+                  For any request you might have, please contact us at <a href="mailto:rohit.rakesh@st.ovu.de" target="_blank">rohit.rakesh@st.ovgu.de</a> and <a href="mailto:anjali.singh@st.ovgu.de" target="_blank">anjali.singh@st.ovgu.de</a>.
+              </p>
+              <!-- <p>
+                  You can also follow us on <strong>X</strong> (ex Twitter): <a href="https://twitter.com/hcai_ovgu" target="_blank">@hcai_ovgu</a>.
+              </p> -->
+              <div class="social-icons-btn">
+                  <a class="icons twitter"  href="https://twitter.com/hcai_ovgu">
+                     <img class="iconContact" src="./img/SVGs/X_logo_2023.svg" alt="">
+                  </a>
+                  </a>
+                  <a class="icons instagram"  href="#">
+                   <img class="iconContact" src="./img/SVGs/instagram.svg" alt="">
+                  </a>
+                </div>
+              
+          </div>
+      </div>
+      
+
+  </section>
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+
+
+  
+
+  <script src="js/particles.min.js"></script> 
+  <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+   <script src="js/particle.js"></script>
+   <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!-- Font Awesome personal kit -->
+  <script src="https://kit.fontawesome.com/5b4f914426.js" crossorigin="anonymous"></script>
+
+  <!-- Leaflet for OpenStreetMap -->
+  <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+   <!-- For sticky navbar -->
+   <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.primary-header');
+    const navbarHeight = navbar.getBoundingClientRect().height;
+
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('.primary-navigation');
+        if (window.scrollY > 50) { // Adjust scroll value as needed
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
+            // Scrolling down & past the navbar
+            navbar.classList.add('nav-hidden');
+        } else {
+            // Scrolling up
+            navbar.classList.remove('nav-hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+
+    // To show navbar when scrolling stops
+    let timer = null;
+    window.addEventListener('scroll', function() {
+        if(timer !== null) {
+            clearTimeout(timer);        
+        }
+        timer = setTimeout(function() {
+            navbar.classList.remove('nav-hidden');
+        }, 500); // Changed from 150 to 500 milliseconds
+    }, false);
+</script>
+
 </body>
 </html>
