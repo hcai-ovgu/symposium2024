@@ -31,7 +31,7 @@
 </head>
 <body class="home">
   <div style="z-index: -1;" id="particles-js"><canvas class="particles-js-canvas-el" width="2536" height="750" style="width: 100%; height: 100%;"></canvas></div> 
-  <a class="skip-to-content" href="#main">Skip to content</a>
+ 
   <header class="primary-header flex">
     <div>
       <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
@@ -62,7 +62,7 @@
     </div>
 
     <div class="register">
-      <a href="">
+      <a href="https://forms.gle/LajHfyGhsyAhsiGm6" target="_blank">
         <button type="submit">
           <h1 class="text-clr3 fs-500 ff-sans-cond uppercase letter-spacing-1">Register Now
         </button>
@@ -73,10 +73,10 @@
     </div>
     
   </main>
-  <section class="about-container">
+  <section class="about-container wow fadeInUp">
     <div class="main-box">
       <div class="box-1">
-        <img style="height: 100%;" src="./assets/home/Otto von (1).png" alt="">
+        <img style="width: 100%; height: 100%; object-fit: cover;" src="./assets/home/Otto von (1).png" alt="">
         
 
       </div>
@@ -193,24 +193,37 @@
     Target Audience Section
     ============================-->
 
-    <section id="audience" class="wow fadeInUp section-with-bg audience">
+<section class="about-container wow fadeInUp">
+      <div class="main-box">
+        <div class="box-1">
+          <img style="height: 100%; overflow: hidden;" src="./assets/home/Target-audienece.jpeg" alt="Target-audienece">
+          
+  
+        </div>
+        
+        <div class="box-2">
+  
+          <h2 class="ff-serif fs-700 text-clr2 ">Target Audience</h2>
+  
+          <br>
 
-      <div class="container-fluid">
-          <div class="section-header bg-">
-              <h2 class="ff-serif fs-700 text-clr2 ">Target Audience</h2>
-              <br>
-              <p class="fs-500 ff-sans-cond text-clr2 ">
-                  The HCAI@OVGU Symposium targets individuals interested in studying novel contributions to HCAI approaches, from researchers to practitioners belonging to academia and industry.
-                  The Symposium aims to discuss and exchange ideas within the community about the advances in the development of trustworthy, fair and privacy-preserving systems, as well as explainable user interfaces, with a specific focus on the users' perception in real-world scenarios and not (only) on the algorithmic and model performance.
-              </p>
-              <br>
-              <p class="fs-500 ff-sans-cond text-clr2" >
-                  HCAI@OVGU aims to foster cross-disciplinary and interdisciplinary discussions between experts from various research fields, such as computer science, psychology, sociology, law, medicine, business, etc., to discuss problems and synergies in this exciting research topic.
-              </p>
-          </div>
+          <ul>
+            <li class="fs-500 ff-sans-cond text-clr2 text-2">
+              The HCAI@OVGU Symposium targets individuals interested in studying novel contributions to HCAI approaches, from researchers to practitioners belonging to academia and industry.
+              The Symposium aims to discuss and exchange ideas within the community about the advances in the development of trustworthy, fair and privacy-preserving systems, as well as explainable user interfaces, with a specific focus on the users' perception in real-world scenarios and not (only) on the algorithmic and model performance.
+
+            </li>
+            <li class="fs-500 ff-sans-cond text-clr2 text-2">
+              HCAI@OVGU aims to foster cross-disciplinary and interdisciplinary discussions between experts from various research fields, such as computer science, psychology, sociology, law, medicine, business, etc., to discuss problems and synergies in this exciting research topic.
+
+            </li>
+          </ul>
+
+        </div>
+        
+        
       </div>
-
-  </section>
+    </section>
 
   <!--==========================
     Schedule Section
@@ -336,6 +349,47 @@
 
   <!-- Leaflet for OpenStreetMap -->
   <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+   <!-- For sticky navbar -->
+   <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.primary-header');
+    const navbarHeight = navbar.getBoundingClientRect().height;
+
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('.primary-navigation');
+        if (window.scrollY > 50) { // Adjust scroll value as needed
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
+            // Scrolling down & past the navbar
+            navbar.classList.add('nav-hidden');
+        } else {
+            // Scrolling up
+            navbar.classList.remove('nav-hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+
+    // To show navbar when scrolling stops
+    let timer = null;
+    window.addEventListener('scroll', function() {
+        if(timer !== null) {
+            clearTimeout(timer);        
+        }
+        timer = setTimeout(function() {
+            navbar.classList.remove('nav-hidden');
+        }, 500); // Changed from 150 to 500 milliseconds
+    }, false);
+</script>
 
 </body>
 </html>
