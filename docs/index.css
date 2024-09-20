@@ -830,6 +830,37 @@ canvas {
     border: solid white;
     margin-left: 10%;
 }
+.main-box-left{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxRight{
+   border-radius: 0 50px 0 50px;
+   padding-right: 15%;
+}
+
+.boxLeft{
+    border-radius: 0 50px 0 50px;
+    border: solid white ;
+    height: 100%;
+    width: 80%;
+    padding-inline: 10%;
+    padding-top: 5%;
+    margin-left: 10%;
+    
+
+}
+
+.boxRight img {
+    object-fit: cover;
+    border-radius: 0 50px 0 50px;
+    border: solid white;
+}
 
 .text-1{
     text-align: center;
@@ -1102,6 +1133,25 @@ canvas {
     }
     .box-1 img{
         margin-left: 0;
+        
+    }
+    .main-box-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxRight{
+        width: 80%;
+        padding: 0;
+        margin: 5% 5% 5% 5%;
+    }
+    .boxLeft{
+        width: 80%;
+        padding: 20px;
+        margin: 5% 5% 5% 5%;
+    }
+    .boxRight img{
+        margin-left: 0;
+        
     }
     .main-container{
         margin-top: 5%;
@@ -1152,6 +1202,25 @@ canvas {
         margin: 5% 5% 5% 5%;
     }
     .box-1 img{
+        margin-left: 0;
+    }
+
+    .main-box-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxRight{
+        width: 80%;
+        padding: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .boxLeft{
+        width: 80%;
+        padding: 20px;
+        margin: 5% 5% 5% 5%;
+    }
+    .boxRight img{
         margin-left: 0;
     }
     .main-container{
