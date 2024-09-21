@@ -515,6 +515,14 @@ body {
 /* speakers */
 .speaker {
     background-image: url(./assets/speaker/background-speaker-mobile.jpg);
+    background-image: -webkit-image-set(
+      "./assets/speaker/background-speaker-mobile.webp" type("image/webp"),
+      "./assets/speaker/background-speaker-mobile.jpg" type("image/jpeg")
+    );
+    background-image: image-set(
+      "./assets/speaker/background-speaker-mobile.webp" type("image/webp"),
+      "./assets/speaker/background-speaker-mobile.jpg" type("image/jpeg")
+    );
     background-size: cover;
 }
 
@@ -522,18 +530,44 @@ body {
     .speaker {
         background-position: center center;
         background-image: url(./assets/speaker/background-speaker-tablet.jpg);
+        background-image: -webkit-image-set(
+            "./assets/speaker/background-speaker-tablet.webp" type("image/webp"),
+            "./assets/speaker/background-speaker-tablet.jpg" type("image/jpeg")
+          );
+          background-image: image-set(
+            "./assets/speaker/background-speaker-tablet.webp" type("image/webp"),
+            "./assets/speaker/background-speaker-tablet.jpg" type("image/jpeg")
+          );
+          background-size: cover;
     }
 }
 
 @media (min-width: 45rem) {
     .speaker {
         background-image: url(./assets/speaker/background-speaker-desktop.jpg);
+        background-image: -webkit-image-set(
+            "./assets/speaker/background-speaker-desktop.webp" type("image/webp"),
+            "./assets/speaker/background-speaker-desktop.jpg" type("image/jpeg")
+          );
+          background-image: image-set(
+            "./assets/speaker/background-speaker-desktop.webp" type("image/webp"),
+            "./assets/speaker/background-speaker-desktop.jpg" type("image/jpeg")
+          );
+          background-size: cover;
     }
 } 
 
 /* organiser */
 .organiser {
-    background-image: url(./assets/organiser/background-organiser-mobile.jpg);
+    background-image: url(./assets/organiser/background-organiser-mobile.webp);
+    background-image: -webkit-image-set(
+      "./assets/organiser/background-organiser-mobile.webp" type("image/webp"),
+      "./assets/organiser/background-organiser-mobile.jpg" type("image/jpeg")
+    );
+    background-image: image-set(
+      "./assets/organiser/background-organiser-mobile.webp" type("image/webp"),
+      "./assets/organiser/background-organiser-mobile.jpg" type("image/jpeg")
+    );
     background-size: cover;
 }
 
@@ -541,12 +575,30 @@ body {
     .organiser {
         background-position: center center;
         background-image: url(./assets/organiser/background-organiser-tablet.jpg);
+        background-image: -webkit-image-set(
+          "./assets/organiser/background-organiser-tablet.webp" type("image/webp"),
+          "./assets/organiser/background-organiser-tablet.jpg" type("image/jpeg")
+        );
+        background-image: image-set(
+          "./assets/organiser/background-organiser-tablet.webp" type("image/webp"),
+          "./assets/organiser/background-organiser-tablet.jpg" type("image/jpeg")
+        );
+        background-size: cover;
     }
 }
 
 @media (min-width: 45rem) {
     .organiser {
         background-image: url(./assets/organiser/background-organiser-desktop.jpg);
+        background-image: -webkit-image-set(
+          "./assets/organiser/background-organiser-desktop.webp" type("image/webp"),
+          "./assets/organiser/background-organiser-desktop.jpg" type("image/jpeg")
+        );
+        background-image: image-set(
+          "./assets/organiser/background-organiser-desktop.webp" type("image/webp"),
+          "./assets/organiser/background-organiser-desktop.jpg" type("image/jpeg")
+        );
+        background-size: cover;
     }
 } 
 
@@ -1113,10 +1165,44 @@ canvas {
     background: #e0072f;
     color: #fff;
   }
+  .location-img{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin-top: 2%;
+    padding: 5%;
+}
+.lkimg-1 {
+    height: 40vh;
+    width: 30vw;
+
+    border-radius: 0 50px 0 50px;
+    border: solid white;
+
+}
+.lkimg-2 {
+    
+    height: 40vh;
+    width: 30vw;
+    margin-top: 5vh;
+    border-radius: 50px 0 50px 0;
+    border: solid white;
+
+}
 
 /* Smartphones (portrait and landscape) */
 
   @media only screen and (max-width: 767px) {
+    .location-img{
+        display: flex;
+        flex-direction: column;
+    }
+    .lkimg-1{
+        width: 80vw;
+    }
+    .lkimg-2{
+        width: 80vw;
+    }
     .main-box{
         display: flex;
         flex-direction: column;
@@ -1186,6 +1272,16 @@ canvas {
   /* Tablets (portrait and landscape) */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .lkimg-1{
+        width: 80vw;
+    }
+    .lkimg-2{
+        width: 80vw;
+    }
+    .location-img{
+        display: flex;
+        flex-direction: column;
+    }
     .main-box{
         display: flex;
         flex-direction: column;
@@ -1286,3 +1382,7 @@ canvas {
 .dot-side:focus { 
     background-color: hsl( var(--clr-clr3) / .5);
 }
+
+
+
+
