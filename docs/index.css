@@ -1497,6 +1497,7 @@ canvas {
       max-height: 300px;
     }
   }
+  
 
   .schedule {
     background-color: hsl(230, 35%, 7%); /* Dark background color */
@@ -1800,6 +1801,26 @@ canvas {
   font-size: 0.9rem;
   color: #0B0D17;
 }
+.speaker-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+.speaker-link:hover {
+  text-decoration: none;
+}
+
+.speaker-item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.speaker-item:hover {
+  transform: translateY(-5px);
+}
+
+
 
 /* Translucent effect */
 .translucent {
