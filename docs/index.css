@@ -1789,8 +1789,57 @@ canvas {
   font-style: italic;
   font-size: 0.9rem;
 }
+.speaker-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 5%;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Bellefair', serif;
+}
+
+.speaker-group {
+  margin-bottom: 4rem;
+}
+
+.group-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #D0D6F9;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Existing speaker-list styles */
+.speaker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 @media (max-width: 768px) {
+
+  .speaker-container {
+    padding: 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .group-title {
+    font-size: 1.5rem;
+  }
   .speaker-item {
     flex-direction: column;
   }
@@ -1812,3 +1861,16 @@ canvas {
   }
 }
 
+/* Customizing scrollbar for Webkit browsers */
+.talk-abstract::-webkit-scrollbar {
+  width: 8px;
+}
+
+.talk-abstract::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.talk-abstract::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
