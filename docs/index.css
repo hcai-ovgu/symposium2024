@@ -1874,3 +1874,54 @@ canvas {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
+
+/* ------------------- */
+/* Schedule buttons    */
+/* ------------------- */
+
+.btn-primary.btn-sm {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 10px;
+  background: hsl( var(--clr-clr3) / 0.1);
+  color: #FAF9F6; /* Explicitly setting to white/off-white */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9em;
+  border: 1px solid #FAF9F6; /* Matching border color */
+  transition: var(--dur);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.btn-primary.btn-sm:hover {
+  background: hsl( var(--clr-clr3) );
+  color: #FAF9F6; /* Keeping white on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary.btn-sm:active {
+  transform: translateY(0);
+}
+
+/* Optional: Add loading state for when PDF is loading */
+.btn-primary.btn-sm.loading {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+/* Optional: Add disabled state for unavailable presentations */
+.btn-primary.btn-sm.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .btn-primary.btn-sm {
+      padding: 6px 15px;
+      font-size: 0.8em;
+  }
+}
