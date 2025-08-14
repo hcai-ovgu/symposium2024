@@ -28,117 +28,120 @@
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav> 
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">About</a>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">Home</a>
             <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="speakers.html">Speaker</a>
             <li class="active"><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="organisers.html">Organiser</a>
+            <li class="active"><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="https://hcai-ovgu.github.io/symposium2024/#program">Schedule</a>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="event-promotion.html">Promotion</a>
             <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="https://hcai-ovgu.github.io/symposium2024/#venue" >Venue</a></li>
             <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="https://hcai-ovgu.github.io/symposium2024/#contacts">Contacts</a></li>
+           
            
         </ul>
     </nav>
   </header>
   
-  <main id="main" class="grid-container grid-container--organiser flow">
-    
-    <button class="dot-side left"><img style="height: 50px;" src="./assets/shared/352467_arrow_left_icon.png" alt=""></button>
-    <button class="dot-side right"><img style="height: 50px;" src="./assets/shared/352468_arrow_right_icon.png" alt=""></button>
-    <div class="dot-indicators flex" role="tablist" aria-label="organiser member list">
-      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0"></button>
-      <button aria-selected="false" aria-controls="marco" role="tab" data-image="marco-image" tabindex="-1"></button>
-      <button aria-selected="false" aria-controls="local-organisers" role="tab" data-image="" tabindex="-2"></button>
-      <button aria-selected="false" aria-controls="Kartik" role="tab" data-image="kartik-image" tabindex="-3"></button>
-      <button aria-selected="false" aria-controls="Volunteers" role="tab" data-image="" tabindex="-4"></button>
-    </div>
-    
-    <!-- Ernesto William De Luca -->
+  <main id="main" class="organiser-container">
+    <h1 class="page-title">Organizing Committee</h1>
 
-    <article class="organiser-details flow translucent" id="commander-tab" role="tabpanel" tabindex="0">
-      <header class="flow flow--space-small">
-        <p class="fs-700 uppercase ff-serif"> Ernesto William De Luca </p>
-        <h2 class="fs-600 ff-serif uppercase">Full Professor, Otto von Guericke University Magdeburg, Germany </h2>
-      </header>
-      <p>Leibniz Institute for Educational Media |
-        Georg Eckert Institute, Brunswick, Germany</p>
+    <section class="organiser-group">
+      <h2 class="group-title text-clr2">General Chairs</h2>
+      <div class="organiser-list">
+        <div class="organiser-item translucent">
+          <img src="assets/organiser/Deluca.png" alt="Ernesto William De Luca">
+          <div class="organiser-info">
+            <h3>Ernesto William De Luca</h3>
+            <p>Full Professor, Otto von Guericke University Magdeburg, Germany</p>
+          
+          </div>
+        </div>
+        <div class="organiser-item translucent">
+          <img src="assets/organiser/Marco.png" alt="Marco Levantesi">
+          <div class="organiser-info">
+            <h3>Marco Levantesi</h3>
+            <p>Research Assistant, Otto von Guericke University Magdeburg, Germany</p>
+          </div>
+        </div>
+        <div class="organiser-item translucent">
+          <img src="assets/organiser/Erasmo.png" alt="Erasmo Purificato">
+          <div class="organiser-info">
+            <h3>Erasmo Purificato</h3>
+            <p>Joint Research Centre, European Commission, Ispra, Italy (former Otto von Guericke University Magdeburg)</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <h1 class="numbered-title translucent"> General Chair</h1>
-    </article> 
-     <!-- Marco Levantesi -->
+    <section class="organiser-group">
+      <h2 class="group-title text-clr2">Local Arrangement and Social Event Chairs</h2>
+      <div class="organiser-list">
+        <div class="organiser-item translucent">
+          <div class="organiser-info">
+            <h3>Anjali Singh</h3>
+            <p>Student, Otto von Guericke University Magdeburg, Germany</p>
+          </div>
+        </div>
+        <div class="organiser-item translucent">
+          <div class="organiser-info">
+            <h3>Rohit Rakesh</h3>
+            <p>Student, Otto von Guericke University Magdeburg, Germany</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-     <article hidden class="organiser-details flow translucent" id="marco" role="tabpanel" tabindex="-1">
-      <header class="flow flow--space-small">
-        <p class="fs-700 uppercase ff-serif"> Marco Levantesi </p>
-          <h2 class="fs-600 ff-serif uppercase">Research Assistant
-          Otto von Guericke University Magdeburg, Germany </h2>
-        <h1 class="numbered-title translucent"> Local Chair</h1>
-      </header>
-
-    
-    </article> 
-    
-    <!-- Local Organizers-->
-    <article hidden class="organiser-details flow translucent" id="local-organisers" role="tabpanel" tabindex="-2">
-      <header class="flow flow--space-small">
-        
-        
-        <h2 class="fs-600 ff-serif uppercase ">Anjali Singh</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Rohit Rakesh</h2>
-        <h1 class="numbered-title translucent"> Local Group</h1>
-      </header>
-    </article> 
-    <!-- Website Development Staff -->
-
-    <article hidden class="organiser-details flow translucent" id="Kartik" role="tabpanel" tabindex="-3">
-      <header class="flow flow--space-small">
-        
-        <p class="fs-700 uppercase ff-serif">Kartik Suru</p>
-        <h2 class="fs-600 ff-serif uppercase ">Student of Digital Engineering, Otto von Guericke University Magdeburg, Germany</h2>
-        <h1 class="numbered-title translucent"> Website Development Staff</h1>
-      </header>
-    </article> 
-    
-    <!-- Publicity Staff -->
-    
-    <article hidden class="organiser-details flow translucent" id="Volunteers" role="tabpanel" tabindex="-4">
-      <header class="flow flow--space-small">
-        
-        
-        <h2 class="fs-600 ff-serif uppercase ">Samapika</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Sufiya</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Sandipan</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Anjali</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Rohit</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Prajwal</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Vamsi</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Jobin</h2>
-        <h2 class="fs-600 ff-serif uppercase ">Kartik</h2>
-        <h1 class="numbered-title translucent">Volunteers</h1>
-      </header>
-    </article> 
-
-   
-   
-    
-    
-    <picture id="commander-image">
-      <source srcset="assets/organiser/Deluca.webp" type="image/webp">
-      <img src="assets/organiser/Deluca.png" alt="Ernesto William De Luca">
-    </picture>
-    <picture class="Kartik Suru" hidden id="kartik-image">
-      <source srcset="assets/organiser/Kartik Suru.webp" type="image/webp">
-      <img  src="assets/organiser/Kartik Suru.png" alt="Kartik Suru">
-    </picture>
-    <picture class="marco" hidden id="marco-image">
-      <source srcset="assets/organiser/Marco.webp" type="image/webp">
-      <img  src="assets/organiser/Marco.png" alt="Marco Levantesi">
-    </picture>
-    <!-- <picture hidden id="pilot-image">
-      <source srcset="assets/organiser/image-victor-glover.webp" type="image/webp">
-      <img src="assets/organiser/image-victor-glover.png" alt="Douglas Hurley">
-    </picture>
-    <picture hidden id="organiser-image">
-      <source srcset="assets/organiser/image-anousheh-ansari.webp" type="image/webp">
-      <img src="assets/organiser/image-anousheh-ansari.png" alt="Douglas Hurley">
-    </picture> -->
+    <section class="organiser-group">
+      <h2 class="group-title text-clr2">Web Chair</h2>
+      <div class="organiser-list">
+        <div class="organiser-item translucent">
+          <img src="assets/organiser/Kartik Suru.png" alt="Kartik Suru">
+          <div class="organiser-info">
+            <h3>Kartik Suru</h3>
+            <p>Student of Digital Engineering, Otto von Guericke University Magdeburg, Germany</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <!-- For sticky navbar -->
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.primary-header');
+    const navbarHeight = navbar.getBoundingClientRect().height;
+
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('.primary-navigation');
+        if (window.scrollY > 50) { // Adjust scroll value as needed
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
+            // Scrolling down & past the navbar
+            navbar.classList.add('nav-hidden');
+        } else {
+            // Scrolling up
+            navbar.classList.remove('nav-hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+
+    // To show navbar when scrolling stops
+    let timer = null;
+    window.addEventListener('scroll', function() {
+        if(timer !== null) {
+            clearTimeout(timer);        
+        }
+        timer = setTimeout(function() {
+            navbar.classList.remove('nav-hidden');
+        }, 500); // Changed from 150 to 500 milliseconds
+    }, false);
+</script>
 </body>
 </html>

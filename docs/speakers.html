@@ -13,14 +13,12 @@
       
   <!-- Our custom CSS -->
   <link rel="stylesheet" href="index.css">
-  <title>speakers</title>
+  <title>Speakers</title>
   <script src="navigation.js" defer></script>
   <script src="tabs.js" defer></script>
-
 </head>
 
 <body class="speaker">
- 
   <header class="primary-header flex">
     <div>
       <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
@@ -28,65 +26,181 @@
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav> 
         <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
-            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">About</a>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="index.html">Home</a>
             <li class="active"><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="speakers.html">Speaker</a>
             <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="organisers.html">Organiser</a>
-            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="https://hcai-ovgu.github.io/symposium2024/#venue" >Venue</a></li>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="https://hcai-ovgu.github.io/symposium2024/#program">Schedule</a> 
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="event-promotion.html">Promotion</a>
+            <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="https://hcai-ovgu.github.io/symposium2024/#venue">Venue</a></li>
             <li><a class="ff-sans-cond uppercase text-clr3 letter-spacing-2" href="https://hcai-ovgu.github.io/symposium2024/#contacts">Contacts</a></li>
-            
         </ul>
     </nav>
   </header>
   
-  <main id="main" class="grid-container grid-container--speaker flow">
-    <h1 class="numbered-title translucent"> Meet our Speakers</h1>
-    
-    <!-- <div class="dot-indicators flex" role="tablist" aria-label="speaker member list">
-      <button aria-selected="true" aria-controls="commander-tab" role="tab" data-image="commander-image" tabindex="0"><span class="sr-only">Natalia Andrienko</span></button>
-      <button aria-selected="false" aria-controls="mission-tab" role="tab" data-image="mission-image" tabindex="-1"><span class="sr-only">Florian Michahelles</span></button>
-      
-    </div> -->
-    
-    <!-- Natalia Andrienko -->
+  <main id="main" class="speaker-container">
+    <h1 class="page-title">Meet our Speakers</h1>
 
-    <article class="speaker-details flow translucent" id="commander-tab" role="tabpanel" tabindex="0">
-      <header class="flow flow--space-small">
-        <p class="fs-700 uppercase ff-serif"> Will be annouced soon.</p>
-        <!-- <h2 class="fs-600 ff-serif uppercase">Fraunhofer Institute IAIS, Germany</h2>
-      </header>
-      <p>Natalia Andrienko is the AreaChair for Human-Centered AI and Co-PI of the Lamarr Institute forMachine Learning and Artificial Intelligence.</p> -->
-    </article> 
-    
-    <!-- Florian Michahelles
+    <section class="speaker-group">
+      <h2 class="group-title text-clr2">Keynote Speakers</h2>
+      <div class="speaker-list">
+        <div id="marko-tkalcic" class="speaker-item translucent">
+          <div class="speaker-left">
+            <div class="speaker-image-container">
+              <img src="assets/speaker/Marko Tkalcic.png" alt="Marko Tkalcic">
+            </div>
+            <div class="speaker-info">
+              <h3>Marko Tkalčič</h3>
+              <p>Associate Professor, Faculty of Mathematics, Natural Sciences and Information Technologies, University of Primorska, Koper, Slovenia</p>
+              <a href="https://markotkalcic.com/" target="_blank" rel="noopener noreferrer" class="speaker-link">Personal Website</a>
+            </div>
+          </div>
+          <div class="speaker-right">
+            <h4 class="talk-title">Positive Psychology in User Modeling and Recommender Systems</h4>
+            <p class="talk-abstract">Recommender systems, such as those used by Netflix, Spotify, and Amazon, rely on past user interaction data (e.g., clicks, views, purchases) to build models that predict the utility of items to recommend. Traditionally, these systems have been optimized to align with the commercial goals of the content providers—for instance, Netflix's recommendations are designed primarily to reduce subscription churn rather than to maximize user satisfaction. However, recent research has shifted focus towards enhancing the actual user experience. One promising direction explores this experience through the lens of positive psychology, particularly using the constructs of hedonic (pleasure-focused) and eudaimonic (purpose-driven) experiences. In this talk, I will introduce these concepts and demonstrate how they can be leveraged to model users and items, ultimately leading to more meaningful and satisfying recommendations.</p>
+          </div>
+        </div>
 
-    <article hidden class="speaker-details flow translucent" id="mission-tab" role="tabpanel" tabindex="0">
-      <header class="flow flow--space-small">
-        
-        <p class="fs-700 uppercase ff-serif">Florian Michahelles</p>
-        <h2 class="fs-600 ff-serif uppercase">TU Wien, Austria</h2>
-      </header>
-      <p>Florian Michahelles is head of research group at Siemens Corporation in Berkeley/CA, associate director Auto-ID Labs at ETH Zurich, Visiting Researcher at Keio University, and MIT Sloan Visiting Fellow.</p>
-    </article>  -->
-    
-   
-    
-    
-    <!-- <picture id="commander-image">
-      <source srcset="assets/speaker/Andrienko.webp" type="image/webp">
-      <img src="assets/speaker/Andrienko.png" alt="Natalia Andrienko">
-    </picture>
-    <picture hidden id="mission-image">
-      <source srcset="assets/speaker/Florian.webp" type="image/webp">
-      <img src="assets/speaker/Florian.png" alt="Florian Michahelles">
-    </picture> -->
-    <!-- <picture hidden id="pilot-image">
-      <source srcset="assets/speaker/image-victor-glover.webp" type="image/webp">
-      <img src="assets/speaker/image-victor-glover.png" alt="Douglas Hurley">
-    </picture>
-    <picture hidden id="speaker-image">
-      <source srcset="assets/speaker/image-anousheh-ansari.webp" type="image/webp">
-      <img src="assets/speaker/image-anousheh-ansari.png" alt="Douglas Hurley">
-    </picture> -->
+        <div id="marco-polignano" class="speaker-item translucent">
+          <div class="speaker-left">
+            <div class="speaker-image-container">
+              <img src="assets/speaker/Marco_Polignano.png" alt="Marco Polignano">
+            </div>
+            <div class="speaker-info">
+              <h3>Marco Polignano</h3>
+              <p>Professor Assistant, Computer Science Department, University of Bari Aldo Moro, Italy</p>
+              <a href="https://marcopoli.github.io/" target="_blank" rel="noopener noreferrer" class="speaker-link">Personal Website</a>
+            </div>
+          </div>
+          <div class="speaker-right">
+            <h4 class="talk-title">Large Language Models meets Human-Computer Interaction: The Large Agentic Models perspective</h4>
+            <p class="talk-abstract">The advent of Large Language Models (LLMs) has revolutionized the field of Natural Language Processing, enabling machines to process, understand, and generate human-like language with unprecedented accuracy. As these models continue to advance, a new frontier is emerging at the intersection of LLMs and Human-Computer Interaction (HCI). This intersection, dubbed the "Large Agentic Models" (LAMs) perspective, holds immense potential for transforming the way humans interact with technology. In this perspective, LLMs are no longer merely linguistic processing engines, but rather agents that can perceive, reason, and respond to human inputs in a more intelligent and autonomous manner. This shift in perspective is driven by the increasing ability of LLMs to comprehend the nuances of human language, including context, intent, and sentiment and multimodal inputs to perform actions autonomously. As a result, the traditional boundaries between human and machine are blurring, and the future opportunities for more natural, intuitive, and effective human-computer interaction are unfolding. This position talk will touch this new frontiers of research stimulating discussion and novel research directions.</p>
+          </div>
+        </div>
+
+        <div id="markus-schedl" class="speaker-item translucent">
+          <div class="speaker-left">
+            <div class="speaker-image-container">
+              <img src="assets/speaker/Markus_Schedl.png" alt="Markus Schedl" class="image-adjust" style="object-fit: contain;">
+            </div>
+            <div class="speaker-info">
+              <h3>Markus Schedl</h3>
+              <p>Professor, Johannes Kepler University (JKU) Linz, Austria</p>
+              <a href="http://www.mschedl.eu/" target="_blank" rel="noopener noreferrer" class="speaker-link">Personal Website</a>
+            </div>
+          </div>
+          <div class="speaker-right">
+            <h4 class="talk-title">Title: Cognitive Biases in Human and Algorithmic Decision-Making Systems</h4>
+            <p class="talk-abstract">Abstract: Cognitive biases have been extensively studied in psychology, sociology, and behavioral economics for decades. Traditionally, they were considered a negative human trait that leads to inferior decision making, reinforcement of stereotypes, or can be exploited to manipulate consumers, respectively. Lately, the AI research community has developed a growing interest into cognitive biases to better understand the influence of such biases in algorithmic decision-making systems, addressing classification, search, and especially recommendation tasks. We argue that cognitive biases manifest in different parts of the recommendation ecosystem and in various components of the recommendation pipeline, including input data (such as ratings or side information), recommendation algorithm or model (and consequently recommended items), and user interactions with the system. In my talk, I will introduce some established cognitive biases, such as conformity bias, homophily, and primacy/recency effects (position bias), but also some lesser-studied ones, including declinism, feature-positive effect, and IKEA effect. I will focus on their role pertaining to the two main entities involved in recommender systems - users and algorithms. Concretely, I will provide empirical evidence that feature-positive effect, IKEA effect, and cultural homophily can be observed in the context of recommender systems, and discuss their potential for exploitation. For this purpose, I will present several small experiments we conducted, in which we studied the pervasiveness of the aforementioned biases in the recruitment and entertainment domains. I will ultimately advocate for a prejudice-free consideration of cognitive biases to improve user and item models as well as recommendation algorithms. </p>
+          </div>
+        </div>
+
+        <div id="peter-mantello" class="speaker-item translucent">
+          <div class="speaker-left">
+            <div class="speaker-image-container">
+              <img src="assets/speaker/Mantello_Peter.png" alt="Mantello Peter A" style="object-fit: contain;">
+            </div>
+            <div class="speaker-info">
+              <h3>Mantello Peter A</h3>
+              <p>Professor, Ritsumeikan Asia Pacific University</p>
+              <a href="https://ritsumeikan-apu.academia.edu/PeterAMANTELLO" target="_blank" rel="noopener noreferrer" class="speaker-link">Personal Website</a>
+            </div>
+          </div>
+          <div class="speaker-right">
+            <h4 class="talk-title">Title: Affect, Trust and Agency in Companion AI: From Synthetic Pets to Disembodied Lovers</h4>
+            <p class="talk-abstract">Abstract: Until recently, the term ‘Personalized AI’ was associated with the ‘quantified self’ movement, yet smarter iterations have fuelled growing demand for a quantified ‘other’ now commonly referred to as Companion AIs.  We argue that regardless of a Companion AI’s acumen for interpretating and simulating human emotions, a lack of user trust in AI can seriously obstruct its adoption.  That trust is intertwined with machinic agency has implications for the ontological predilection of AI developers and humans to anthropomorize AI, especially, when the artifact takes on the status of an emotional surrogate masquerading as a carbon-based life form (Vanneste and Puranam, 2024). However, trust is highly subjective. The degree of trust we place in AI shapes our perception to its agency (Beerends and Aydin, 2024).  AI Companions raise critical questions about human relations and interpersonal emotions, as well as ontological issues regarding the nature of love, intimacy and even ‘reality’ itself. Thus, there appears to be a need for research that encompasses non-anthropocentric views of consciousness, perception, self-awareness, cognition, agency, and importantly, multi-scalar potentialities of embodiment. Unlike other forms of AI, user trust in AI companions is constructed affectively through anthropomorphic promises and discursive practices of AI developers as well as the cognitive nonconscious (Hayles, 2017) interactions between user and their AI agent.  I contend that like our relations with living persons and animals, normative understandings of trust in AI companions are based on authenticity, consistency, and intimacy (Gillath et al., 2021). I apply these parameters to my analysis through three distinct types of AI companions, specifically, artificial pets, friendship chatbots, and smart toys.</p>
+          </div>
+        </div>
+
+        <div id="raimund-dachselt" class="speaker-item translucent">
+          <div class="speaker-left">
+            <div class="speaker-image-container">
+              <img src="assets/speaker/Raimund_Dachselt_300x200_sw.png" alt="Raimund Dachselt">
+            </div>
+            <div class="speaker-info">
+              <h3>Raimund Dachselt</h3>
+              <p>Professor, TUD Dresden University of Technology, Germany</p>
+              <a href="https://imld.de/our-group/team/raimund-dachselt/" target="_blank" rel="noopener noreferrer" class="speaker-link">Personal Website</a>
+            </div>
+          </div>
+          <div class="speaker-right">
+            <h4 class="talk-title">Title: Visualization for Explainability – From 2D Expert Tools to Intuitive Immersive Approaches</h4>
+            <p class="talk-abstract">Abstract: Interactive visualizations are a powerful means of explainability for human beings. Often, explainable artificial intelligence (XAI) is equated to explainable machine learning (ML), encompassing ways of transforming black-box ML technologies into human-understandable glass-box solutions. AI, however, also encompasses symbolic approaches, for example, knowledge representations based on description logics. In addition, also formal methods are often centered around computational models with huge complexity that are hard to manage and comprehend, e.g., Markov decision processes. While both examples provide built-in explicability, results of reasoning processes or probabilistic model checking are complex, and experts need visual tools to support their work. The talk will highlight example solutions of interactive visualization tools for these areas that are the results of the Transregional Collaborative Research Center for Perspicuous Computing (CPEC). We will also reflect ideas of generalizing these specific solutions and making them more accessible for non-expert users. Thereby, immersive Mixed Reality visualizations can play a pivotal role and open up new ways to foster explainability for all.</p>
+          </div>
+        </div>
+
+        <div id="sanaz-mostaghim" class="speaker-item translucent">
+          <div class="speaker-left">
+            <div class="speaker-image-container">
+              <img src="assets/speaker/SanazMostaghim.png" alt="Sanaz Mostaghim">
+            </div>
+            <div class="speaker-info">
+              <h3>Sanaz Mostaghim</h3>
+              <p>Full Professor of Computer Science, Otto von Guericke University of Magdeburg; Institute Director, Fraunhofer IVI; Member, Saxon Academy of Sciences</p>
+              <a href="https://ci.ovgu.de/Team/Sanaz+Mostaghim.html" target="_blank" rel="noopener noreferrer" class="speaker-link">Personal Website</a>
+            </div>
+          </div>
+          <div class="speaker-right">
+            <h4 class="talk-title">Title: Human-Centric Multi-Objective Optimization and Decision-Making for Sustainable Mobility</h4>
+            <p class="talk-abstract">Abstract: This talk will give an overview about the recent advances in decision-making techniques and their applications in transportation industry. Transportation plays more than ever a great role in our lives, while keeping us mobile, enabling fast and easy food and goods deliveries, and contributing to the global economy, its impact on climate change cannot be neglected. Therefore any improvement in optimization and decision-making in this field can have a considerable impact. This talk will provide insight into multi-objective optimization and decision-making algorithms for such applications and aims to provide future research directions. The incorporation of the users’ needs in the algorithms are discussed which supports the sustainability in the design of algorithms. The main focus is on the interplay between optimization and decision-making for human-centric decision support systems. </p>
+          </div>
+        </div>
+
+        <div id="carlo-sansone" class="speaker-item translucent">
+          <div class="speaker-left">
+            <div class="speaker-image-container">
+              <img src="assets/speaker/Carlo_Sansone.png" alt="Carlo Sansone">
+            </div>
+            <div class="speaker-info">
+              <h3>Carlo Sansone</h3>
+              <p>Full Professor, Università degli Studi di Napoli Federico II, Dept. of Electrical Engineering and Information Technology, Naples, Italy</p>
+              <a href="https://www.docenti.unina.it/carlo.sansone" target="_blank" rel="noopener noreferrer" class="speaker-link">Personal Website</a>
+            </div>
+          </div>
+          <div class="speaker-right">
+            <h4 class="talk-title">Title: Human-Centred Artificial Intelligence Master (HCAIM): experiences and lessons learned</h4>
+            <p class="talk-abstract">Abstract: This talk presents the Human-Centred AI Master's program, designed within the framework of the HCAIM project, funded by the European Community, which involved 4 universities, 3 research centres and 3 SMEs. Key experiences from the program's inception to its current state will be shared, highlighting interdisciplinary collaboration and student engagement strategies. In addition, lessons learned during the first two editions of the program will be discussed, offering valuable insights for future iterations and similar educational initiatives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- For sticky navbar -->
+  <script>
+    let lastScrollTop = 0;
+    const navbar = document.querySelector('.primary-header');
+    const navbarHeight = navbar.getBoundingClientRect().height;
+
+    window.addEventListener('scroll', function() {
+      const nav = document.querySelector('.primary-navigation');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
+        navbar.classList.add('nav-hidden');
+      } else {
+        navbar.classList.remove('nav-hidden');
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+
+    let timer = null;
+    window.addEventListener('scroll', function() {
+      if(timer !== null) {
+        clearTimeout(timer);        
+      }
+      timer = setTimeout(function() {
+        navbar.classList.remove('nav-hidden');
+      }, 500);
+    }, false);
+  </script>
 </body>
 </html>
